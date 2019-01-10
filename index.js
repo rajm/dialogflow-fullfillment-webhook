@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json());
 
-app.post("/silly", function(req, res, next){
+app.post("/webhook", function(req, res, next){
 
   // uncomment this to see what DialogFlow is sending us.
    console.log(req.body);
@@ -19,7 +19,7 @@ app.post("/silly", function(req, res, next){
 
   //const sillyGreeting = `Your favourite color is ${parameters.color} and your number is ${parameters.number}`;
 
-  const sillyGreeting = `hello welcome karthick`;
+  const webhookGreeting = `hello welcome Raj`;
 
   res.json({
    // speech : sillyGreeting,
