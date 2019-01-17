@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-app.all("/silly", function(req, res, next){
+app.all("/webhook", function(req, res, next){
   
 const fs = require('fs');
 const readline = require('readline');
